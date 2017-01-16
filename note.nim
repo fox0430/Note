@@ -77,6 +77,23 @@ var
  X=[1,2,3,4,5]
  for i in low(X)..high(X):
    echo X[i]  #>>>1,2,3,4,5
+
+#Multidimention array
+type IntArray=array[0..3,array[0..3,int]]
+var matrix:IntArray
+for i in countup(0,3):
+  for j in countup(0,3):
+    matrix[i][j]=j
+
+for i in countup(0,3):
+  for j in countup(0,3):
+    echo matrix[i][j]  #>>>0,1,2,3,0...
+
+
+#Type convert
+let i=1
+echo "String" & $i  #>>>String1
+
 #Type convert
 let i=1
 echo "String" & $i  #>>>String1
