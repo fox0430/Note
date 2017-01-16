@@ -2,6 +2,7 @@
 
 var name = readLine(stdin)
 var a = stdin.readLine()
+import strutils,sequtils
 var b = stdin.readLine.split.map(parseInt)
 
 #Output
@@ -34,7 +35,26 @@ const I:int #>>>Error!!
 let I=1
 let m:int #>>>OK!
 
-#if sentence ...needed indentataion
+
+#String
+var S: string="String"
+echo S  #>>>String
+var s: char='s'
+echo s  #>>>s
+
+echo(len(s))  #>>>6
+
+for i in s:
+  echo i  #>>>S,t,r,i,n,g
+
+var s: string
+echo s  #>>>nil
+
+let s1="aaa"
+let s2="bbb"
+echo(s1 & s2)
+
+#if ...needed indentataion
 if x: x = false
 
 if x:
@@ -44,4 +64,19 @@ elif y:
 else:
   x=false
 
+#for 
+for i in countup(1..5):
+ echo i  #>>>1,2,3,4,5
 
+
+#Array
+type
+  IntArray=array[0..5,int]
+var
+  X:IntArray
+ X=[1,2,3,4,5]
+ for i in low(X)..high(X):
+   echo X[i]  #>>>1,2,3,4,5
+#Type convert
+let i=1
+echo "String" & $i  #>>>String1
