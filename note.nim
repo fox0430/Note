@@ -2,6 +2,8 @@
 
 var name = readLine(stdin)
 var a = stdin.readLine()
+import strutils
+var b = stdin.readLine.parseInt
 import strutils,sequtils
 var b = stdin.readLine.split.map(parseInt)
 
@@ -76,7 +78,8 @@ var
   X:IntArray
  X=[1,2,3,4,5]
  for i in low(X)..high(X):
-   echo X[i]  #>>>1,2,3,4,5
+    echo X[i]  #>>>1,2,3,4,5
+    echo X.len  #>>>5
 
 #Multidimention array
 type IntArray=array[0..3,array[0..3,int]]
