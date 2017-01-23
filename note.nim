@@ -67,7 +67,7 @@ else:
   x=false
 
 #for 
-for i in countup(1..5):
+for i in 1..5:
  echo i  #>>>1,2,3,4,5
 
 
@@ -91,6 +91,12 @@ for i in countup(0,3):
 for i in countup(0,3):
   for j in countup(0,3):
     echo matrix[i][j]  #>>>0,1,2,3,0...
+
+#Sequence
+import strutils
+let s1 = @[1,2,3]
+echo s1,s1[0]  #>>>@[1,2,3] 2
+
 
 
 #Type convert
